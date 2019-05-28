@@ -1,0 +1,19 @@
+<h1>{{title}}</h1>
+<p>Welcome to {{title}}</p>
+
+<h2>Live Updates From the London Book Dash</h2>
+
+<div class="grid-container">
+  {{#each data}}
+  <div class="grid-item">
+
+    <h3> {{this.type}} by {{this.user}} </h3>
+    <p> Added at {{this.time}} </p>
+    <img src={{this.img}}></img>
+
+  </div>
+  {{/each}}
+</div>
+  <script>
+console.log({{raw_data}})
+  </script>
